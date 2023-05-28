@@ -3,7 +3,7 @@ package org.example.money;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MyFirstTest {
+public class MoneyTest {
 
     @Test
     public void testMultiplication() {
