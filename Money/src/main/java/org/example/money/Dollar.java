@@ -2,8 +2,11 @@ package org.example.money;
 
 public class Dollar extends Money {
 
+    private String currency;
+
     Dollar(int amount) {
         this.amount = amount;
+        this.currency = "USD";
     }
 
     Money times(int multiplier) {
@@ -12,6 +15,6 @@ public class Dollar extends Money {
 
     @Override
     String currency() {
-        return "USD";
+        return this.currency;
     }
 }
