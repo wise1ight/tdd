@@ -16,16 +16,16 @@ public class MoneyTest {
     public void testEquality() {
         Assertions.assertTrue(Money.dollar(5).equals(Money.dollar(5)));
         Assertions.assertFalse(Money.dollar(5).equals(Money.dollar(6)));
-        Assertions.assertTrue(new Franc(5).equals(new Franc(5)));
-        Assertions.assertFalse(new Franc(5).equals(new Franc(6)));
-        Assertions.assertFalse(new Franc(5).equals(Money.dollar(5)));
+        Assertions.assertTrue(Money.franc(5).equals(Money.franc(5)));
+        Assertions.assertFalse(Money.franc(5).equals(Money.franc(6)));
+        Assertions.assertFalse(Money.franc(5).equals(Money.dollar(5)));
     }
 
     @Test
     public void testFrancMultiplication() {
-        Franc five = new Franc(5);
-        Assertions.assertEquals(new Franc(10), five.times(2));
-        Assertions.assertEquals(new Franc(15), five.times(3));
+        Money five = Money.franc(5);
+        Assertions.assertEquals(Money.franc(10), five.times(2));
+        Assertions.assertEquals(Money.franc(15), five.times(3));
     }
 
 }
