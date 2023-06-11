@@ -3,7 +3,7 @@ package org.example.money;
 public abstract class Money {
 
     protected int amount;
-    private String currency;
+    protected String currency;
 
     public boolean equals(Object object) {
         Money money = (Money) object;
