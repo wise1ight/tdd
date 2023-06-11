@@ -31,4 +31,8 @@ public class Money {
     String currency() {
         return this.currency;
     }
+
+    public String toString() {
+        return amount + " " + currency;
+    }
 }
