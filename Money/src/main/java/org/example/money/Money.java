@@ -23,9 +23,9 @@ public class Money {
     static Money franc(int amount) {
         return new Franc(amount, "CHF");
     }
-
-    Money times(int amount) {
-        return null;
+    
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 
     String currency() {
