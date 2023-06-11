@@ -1,6 +1,6 @@
 package org.example.money;
 
-public class Money {
+public abstract class Money {
 
     protected int amount;
 
@@ -13,4 +13,6 @@ public class Money {
     static Dollar dollar(int amount) {
         return new Dollar(amount);
     }
+
+    abstract Money times(int multiplier);
 }
