@@ -33,7 +33,8 @@ public class MoneyTest {
         Money reduced = bank.reduce(sum, "USD");
         Assertions.assertEquals(Money.dollar(10), reduced);
     }
-
+    
+    @Test
     public void testPlusReturnsSum() {
         Money five = Money.dollar(5);
         Expression result = five.plus(five);
