@@ -4,7 +4,7 @@ public class Franc extends Money {
 
     private String currency;
 
-    Franc(int amount) {
+    Franc(int amount, String currency) {
         this.amount = amount;
         this.currency = "CHF";
     }
