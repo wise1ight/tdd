@@ -32,6 +32,9 @@ class WasRun(TestCase):
     def tearDown(self):
         self.log = self.log + "tearDown "
 
+    def testBrokenMethod(self):
+        raise Exception
+
 
 class TestResult:
     def __init__(self):
