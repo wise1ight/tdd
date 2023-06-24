@@ -54,6 +54,14 @@ class TestResult:
         return "%d run, %d failed" % (self.runCount, self.failureCount)
 
 
+class TestSuite:
+    def __init__(self):
+        self.tests = []
+
+    def add(self, test):
+        self.tests.append(test)
+
+
 class TestCaseTest(TestCase):
     def setUp(self):
         self.test = WasRun("testMethod")
