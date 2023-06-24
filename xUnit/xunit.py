@@ -31,6 +31,11 @@ class WasRun(TestCase):
         self.log = self.log + "tearDown "
 
 
+class TestResult:
+    def summary(self):
+        return "1 run, 0 failed"
+
+
 class TestCaseTest(TestCase):
     def setUp(self):
         self.test = WasRun("testMethod")
